@@ -4,7 +4,14 @@
 
 {{#each projects as |project|}}
   <div class="project">
+
     <div class="project-name">
+      <a = "/projects/{{project.name}}">
+        {{project.name}}
+      </a>
+    </div>
+
+    <div class="project-page">
       <a href="/projects/{{project.page}}">
          {{project.page}}
        </a>
